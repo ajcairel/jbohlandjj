@@ -1,7 +1,7 @@
 export default function Welcome() {
     return (
       <section id="about">
-        <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center pb-0">
+        <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center pb-10">
         <div className="lg:max-w-lg lg:w-1/2 md:w-1/2 w-5/6">
             <img
               className="object-cover object-center rounded"
@@ -9,12 +9,12 @@ export default function Welcome() {
               src="./Jake.png"
             />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <div className="mb-0 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black text-center">
               Jake Bohland
               <br className="hidden lg:inline-block" />
             </h1>
-            <h3 className="sm:text-4xl text-xl mb-4 font-medium text-slate-400 text-center">
+            <h3 className="sm:text-4xl text-xl mb-4 font-medium text-white text-center">
               Brown Belt under Marcio Morera
             </h3>
             <p className="mb-8 leading-relaxed text-black">
@@ -27,7 +27,7 @@ export default function Welcome() {
                   target="_blank"
                   rel="noopener"
                 >
-                  <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+                  <div className="bg-blue-500 rounded flex p-4 h-full items-center">
                     <img
                       src="./instagram.png"
                       alt="The logo icon for insta(OG)"
@@ -42,11 +42,11 @@ export default function Welcome() {
               </div>
               <div className="p-2 w-full">
                 <a
-                  href="https://drive.google.com/file/d/1DjJC2p1n409saaztRJaqJGK0ZUZRLfU5/view?usp=sharing"
+                  href="https://rgpleasanton.com/"
                   target="_blank"
                   rel="noopener"
                 >
-                  <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+                  <div className="bg-red-500 rounded flex p-4 h-full items-center">
                     <img
                       src="./RGPLogo.jpeg"
                       alt="PDF"
@@ -59,17 +59,8 @@ export default function Welcome() {
                   </div>
                 </a>
               </div>
-              
-              
             </div>
           </div>
-          {/* <div className="lg:max-w-lg lg:w-1/2 md:w-1/2 w-5/6">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src="./Jake.png"
-            />
-          </div> */}
         </div>
       </section>
     );

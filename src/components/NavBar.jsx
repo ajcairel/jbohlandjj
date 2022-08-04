@@ -6,7 +6,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div id="top">
-      <nav className="bg-gradient-to-r from-cyan-800 to-blue-500 text-white fixed w-full z-10">
+      <nav className="bg-white text-white fixed w-full z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -23,14 +23,8 @@ export default function NavBar() {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
-                    href="#carouselExampleIndicators"
-                    className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
-                  >
-                    Skills
-                  </a>
-                  <a
                     href="#contact"
-                    className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+                    className="inline-flex items-center bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
                   >
                     Contact Me
                   </a>
@@ -41,7 +35,7 @@ export default function NavBar() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-red-500 inline-flex items-center justify-center p-2 rounded-md text-white-400 hover:text-white hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-500 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -99,15 +93,8 @@ export default function NavBar() {
                 className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-right"
               >
                 <a
-                  href="#skills"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium z-10"
-                  onClick={() => setIsOpen(!isOpen)}
-                >
-                  Skills
-                </a>
-                <a
                   href="#contact"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium z-10"
+                  className="text-black hover:bg-blue-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium z-10"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   Contact Me
