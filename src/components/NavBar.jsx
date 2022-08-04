@@ -23,7 +23,7 @@ export default function NavBar() {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
-                    href="#skills"
+                    href="#carouselExampleIndicators"
                     className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
                   >
                     Skills
@@ -106,11 +106,11 @@ export default function NavBar() {
                   Skills
                 </a>
                 <a
-                  href="#projects"
+                  href="#contact"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium z-10"
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  Projects
+                  Contact Me
                 </a>
               </div>
             </div>
