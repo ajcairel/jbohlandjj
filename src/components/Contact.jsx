@@ -4,6 +4,8 @@ export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [show, setShow] = useState(false)
+
 
     function encode(data) {
         return Object.keys(data)
@@ -24,7 +26,7 @@ export default function Contact() {
         .catch((error) => alert(error));
     }
   return (
-    <section id="contact" className="relative">
+    <section className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-40 w-full flex items-end justify-start relative">
           <iframe
@@ -88,6 +90,7 @@ export default function Contact() {
             />
           </div>
           <button
+            id="contact"
             type="submit"
             className="text-white bg-blue-300 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
             Submit
