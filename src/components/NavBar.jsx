@@ -30,6 +30,9 @@ export default function NavBar() {
                   </a>
                 </div>
               </div>
+              <div>
+                <h1 style={{text: "black"}}>Jack Boland</h1>
+              </div>
             </div>
             <div className="-mr-2 flex md:hidden z-10">
               <button

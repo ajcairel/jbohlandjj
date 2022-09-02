@@ -9,8 +9,9 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="App bg-gradient-to-tr from-red-400 via-gray-300 to-blue-500">
-      <NavBar />
+      {/* <NavBar /> */}
       <Welcome />
+   
       <PhotoSlider />
       <Contact />
    
