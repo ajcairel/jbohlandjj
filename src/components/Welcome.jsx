@@ -39,7 +39,7 @@ export default function Welcome() {
             <br className="hidden lg:inline-block" />
           </h1>
           <h3 className="sm:text-4xl text-xl mb-4 font-medium text-white text-center">
-            Marcio Moreira Brown Belt
+            Brown Belt under Marcio Moreira
           </h3>
           <div className="lg:flex sm:flex-wrap">
             <div className="p-2 w-full">
