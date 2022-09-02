@@ -4,6 +4,9 @@ import { Slide } from "react-slideshow-image";
 
 const slideImages = [
   {
+    url: "./Jake.png",
+  },
+  {
     url: "./BlueB.jpeg",
   },
   {
@@ -16,13 +19,10 @@ const slideImages = [
     url: "./leg3.jpg",
   },
   {
-    url: "./leg2.jpg",
+    url: "./leg.jpg",
   },
   {
-    url: "./leg1.jpg",
-  },
-  {
-    url: "./maroon.jpg",
+    url: "./leg4.jpg",
   },
 ];
 
@@ -48,50 +48,7 @@ export default function PhotoSlider() {
                 ))}
               </Slide>
           </div>
-          <div className="p-2 mb-0 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:text-left mb-16 md:mb-0 items-center text-center">
-            <div className="border-double border-2 border-white-500">
-            <div className="lg:flex sm:flex-wrap">
-              <div className="p-2 w-full">
-                <a
-                  href="https://www.instagram.com/jakebohland_mmbjj/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <div className="bg-blue-500 rounded flex p-4 h-full items-center">
-                    <img
-                      src="./instagram.png"
-                      alt="The logo icon for insta(OG)"
-                      title="Insta"
-                      className="w-6 h-6 flex-shrink-0 mr-4"
-                    />
-                    <span className="title-font font-medium text-white">
-                      jakebohland_mmbjj
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div className="p-2 w-full">
-                <a
-                  href="https://rgpleasanton.com/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <div className="bg-red-500 rounded flex p-4 h-full items-center">
-                    <img
-                      src="./RGPLogo.jpeg"
-                      alt="PDF"
-                      title="Resume"
-                      className="w-6 h-6 flex-shrink-0 mr-4"
-                    />
-                    <span className="title-font font-medium text-white">
-                      Ralph Gracie Pleasanton 
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-            </div>
-          </div>
+       
         </div>
       </section>
 

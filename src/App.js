@@ -12,7 +12,7 @@ function App() {
       {/* <NavBar /> */}
       <Welcome />
    
-      <PhotoSlider />
+      {/* <PhotoSlider /> */}
       <Contact />
    
      
