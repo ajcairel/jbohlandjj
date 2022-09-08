@@ -57,7 +57,7 @@ export default function Contact() {
         >
           <div className="border-double border-2 border-white-500">
             <h2 className="p-2 sm:text-4xl text-3xl mb-1 font-medium title-font">
-              Contact Me
+              Private Lessons Available
             </h2>
             <p className=" leading-relaxed mb-5">
               Shoot me a message and let's work!
