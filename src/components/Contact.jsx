@@ -1,30 +1,37 @@
 import { useState } from "react";
 export default function Contact() {
+  // <iframe
+  //   src="https://calendar.google.com/calendar/embed?src=jakebohlandmbjj%40gmail.com&ctz=America%2FLos_Angeles"
+  //   style="border: 0"
+  //   width="800"
+  //   height="600"
+  //   frameborder="0"
+  //   scrolling="no"
+  // ></iframe>;
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [show, setShow] = useState(false)
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [show, setShow] = useState(false);
 
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
 
-    function encode(data) {
-        return Object.keys(data)
-          .map(
-            (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-          )
-          .join("&");
-      }
-    
-    function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
     fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", name, email, message }),
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
     })
-        .then(() => alert("Message sent!"))
-        .catch((error) => alert(error));
-    }
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error));
+  }
   return (
     <section className="relative">
       <div className="container px-5 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -38,22 +45,23 @@ export default function Contact() {
             marginHeight={0}
             marginWidth={0}
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2013482934167!2d-121.87909888409912!3d37.69147012471963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fe9e8821b0119%3A0x872b5cb4a3fc965!2sRalph%20Gracie%20Pleasanton!5e0!3m2!1sen!2sus!4v1659405783948!5m2!1sen!2sus" 
+            // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.2013482934167!2d-121.87909888409912!3d37.69147012471963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fe9e8821b0119%3A0x872b5cb4a3fc965!2sRalph%20Gracie%20Pleasanton!5e0!3m2!1sen!2sus!4v1659405783948!5m2!1sen!2sus"
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&src=amFrZWJvaGxhbmRtYmpqQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"
           />
         </div>
         <form
           netlify
           name="contact"
           onSubmit={handleSubmit}
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        >
           <div className="border-double border-2 border-white-500">
-          <h2 className="p-2 sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Contact Me
-          </h2>
-          <p className=" leading-relaxed mb-5">
-            Shoot me a message and let's work! 
-          </p>
-
+            <h2 className="p-2 sm:text-4xl text-3xl mb-1 font-medium title-font">
+              Contact Me
+            </h2>
+            <p className=" leading-relaxed mb-5">
+              Shoot me a message and let's work!
+            </p>
           </div>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-700">
@@ -68,7 +76,10 @@ export default function Contact() {
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-4=700">
+            <label
+              htmlFor="email"
+              className="leading-7 text-sm text-gray-4=700"
+            >
               Email
             </label>
             <input
@@ -82,7 +93,8 @@ export default function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-700">
+              className="leading-7 text-sm text-gray-700"
+            >
               Message
             </label>
             <textarea
@@ -95,7 +107,8 @@ export default function Contact() {
           <button
             id="contact"
             type="submit"
-            className="text-white bg-blue-300 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+            className="text-white bg-blue-300 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+          >
             Submit
           </button>
         </form>
