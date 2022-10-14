@@ -44,7 +44,7 @@ export default function Welcome() {
           <div className="lg:flex sm:flex-wrap">
             <div className="p-2 w-full">
               <a
-                href="https://www.instagram.com/jakebohland_mmbjj/"
+                href="https://www.instagram.com/darcevaderbjj/"
                 target="_blank"
                 rel="noopener"
               >
@@ -56,7 +56,7 @@ export default function Welcome() {
                     className="w-6 h-6 flex-shrink-0 mr-4"
                   />
                   <span className="title-font font-medium text-white">
-                    jakebohland_mmbjj
+                    darcevaderbjj
                   </span>
                 </div>
               </a>
