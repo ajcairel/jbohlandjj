@@ -15,7 +15,7 @@ function App() {
       {/* <PhotoSlider /> */}
       <Contact />
    
-     
+    <br/>
     </div>
   );
 }
